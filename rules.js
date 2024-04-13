@@ -4,7 +4,7 @@ let hasKeycard = false;
 class Start extends Scene {
 	create() {
 		this.engine.setTitle(this.engine.storyData.Title); // TODO: replace this text using this.engine.storyData to find the story title
-		this.engine.addChoice("Begin the story");
+		this.engine.addChoice("Introduction");
 	}
 
 	handleChoice() {

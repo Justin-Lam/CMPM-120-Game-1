@@ -4,7 +4,7 @@
 	"InitialLocation": "Intro",
 	"Locations": {
 		"Intro": {
-			"Body": "A horrible virus that turns people into banana slugs has recently been discovered at UCSC. In order to prevent the spread of the virus, the United States government has mandated that the school be put on quarantine until a cure has been found. \"I can't just sit around here and become a banana slug while waiting for a cure to be found, I need to get out of here!\" you tell yourself.",
+			"Body": "A horrible virus that turns people into banana slugs has recently been discovered at UCSC. In order to prevent it from spreading, the United States government has mandated that the school be put on quarantine until a cure has been found. \"I can't just sit around here and become a banana slug while waiting that, I need to get out of here!\" you tell yourself.",
 			"Choices": [
 				{
 					"Text": "Start Game",
@@ -127,7 +127,7 @@
 			]
 		},
 		"Helicopter": {
-			"Body": "You ascend, finally escaping the earthly restraints of quarantine. Gazing at the shrinking trees down below, you smile."
+			"Body": "You ascend, finally escaping the earthly restraints of your prison. Gazing at the shrinking trees down below, you smile."
 		},
 		"Oakes": {
 			"Body": "Furthest away from where you've began your journey is Oakes college. The brown, cubic architecture here reminds you of the first house you made in Minecraft.",
