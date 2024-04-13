@@ -52,7 +52,8 @@
 			"Choices": [
 				{
 					"Text": "West",
-					"Target": "ScienceHill"
+					"Target": "ScienceHill",
+					"IsSpecial": true
 				},
 				{
 					"Text": "East",
@@ -61,11 +62,17 @@
 			]
 		},
 		"ScienceHill": {
-			"Body": "You're now at Science Hill, once one of the most busiest places on campus but now a ghost town after the quarter was halted.",
+			"Bodies":
+			[
+				"You're now at Science Hill, once one of the most busiest places on campus but now a ghost town after the quarter was halted.",
+				"You're now at Science Hill, once one of the most busiest places on campus but now a ghost town after the quarter was halted. There's a labcoat, scientist's keycard, and a banana slug all on the ground next to each other. You recognize the scientist pictured on the keycard to be the one who ran past you earlier at Kresge.",
+				"You're now at Science Hill, once one of the most busiest places on campus but now a ghost town after the quarter was halted. There's a labcoat and a banana slug on the ground next to each other."
+			],
 			"Choices": [
 				{
 					"Text": "West",
-					"Target": "Kresge"
+					"Target": "Kresge",
+					"IsSpecial": true
 				},
 				{
 					"Text": "East",
@@ -73,12 +80,16 @@
 				},
 				{
 					"Text": "Pickup keycard",
-					"Target": "ScienceHill"
+					"Response": "You picked up the keycard."
 				}
 			]
 		},
 		"Kresge": {
-			"Body": "A scientist hurriedly brushes past you as you enter Kresge college. They've converted the new academic building here into a lab for the virus that only scientists can enter.",
+			"Bodies":
+			[
+				"A scientist hurriedly brushes past you as you enter Kresge college. They've converted the new academic building here into a lab for the virus that only scientists can enter. Next to the doors to the lab is a keycard scanner.",
+				"You enter Kresge college. They've converted the new academic building here into a lab for the virus that only scientists can enter. Next to the doors to the lab is a keycard scanner."
+			],
 			"Choices": [
 				{
 					"Text": "West",
@@ -86,16 +97,23 @@
 				},
 				{
 					"Text": "East",
-					"Target": "ScienceHill"
+					"Target": "ScienceHill",
+					"IsSpecial": true
 				},
 				{
 					"Text": "Scan keycard",
+					"SuccessResponse": "You hold the recently slug-ceased scientist's keycard up to the scanner. The double doors to the lab swing open.",
+					"FailureResponse": "You hold your student ID up to the scanner. Nothing happens."
+				},
+				{
+					"Hidden": true,
+					"Text": "Lab",
 					"Target": "Helipad"
 				}
 			]
 		},
 		"Helipad": {
-			"Body": "Using the recently slug-ceased scientist's keycard, you enter the lab and make your way upstairs to the helipad. There, parked perfectly on the big H lies your freedom.",
+			"Body": "You enter the lab and make your way upstairs to the helipad. There, parked perfectly on the big 'H' lies your freedom.",
 			"Choices": [
 				{
 					"Text": "Hijack helicopter",
@@ -103,7 +121,8 @@
 				},
 				{
 					"Text": "Return",
-					"Target": "Kresge"
+					"Target": "Kresge",
+					"IsSpecial": true
 				}
 			]
 		},
@@ -119,7 +138,8 @@
 				},
 				{
 					"Text": "East",
-					"Target": "Kresge"
+					"Target": "Kresge",
+					"IsSpecial": true
 				}
 			]
 		},
